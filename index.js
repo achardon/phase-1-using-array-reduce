@@ -1,7 +1,8 @@
 const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
-let totalBatteries = batteryBatches.reduce(batteryCounter, 0);
-
-function batteryCounter (accumulator, item) {
+const batteryCounter = function (accumulator, item) {
     return accumulator + item;
 }
+
+let totalBatteries = batteryBatches.reduce(batteryCounter, 0);
+
